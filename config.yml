@@ -1,0 +1,7 @@
+tunnel: <TU_ID_DE_TUNEL>
+credentials-file: /home/tu_usuario/.cloudflared/<TU_ID_DE_TUNEL>.json
+
+ingress:
+  - hostname: nodo.tudominio.com
+    service: http://localhost:5000
+  - service: http_status:404
